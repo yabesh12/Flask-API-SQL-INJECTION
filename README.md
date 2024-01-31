@@ -8,20 +8,27 @@ Build a Flask API that receives a JSON payload via a POST request, checks for SQ
 
 - **Endpoint:** `/v1/sanitized/input/`
 - **Method:** POST
-- **Request Payload Example:**
+- **Request Payload Examples:**
+  - Sanitized Input Request:
   ```json
   {
     "input": "some input"
   }
   ```
+  - UnSanitized Input Request:
+  ```json
+  {
+    "input": "SELECT * FROM users"
+  }
+  ```
 - **Response Examples:**
-  - Sanitized Input:
+  - Sanitized Input Response:
     ```json
     {
       "result": "sanitized"
     }
     ```
-  - Unsanitized Input:
+  - Unsanitized Input Response:
     ```json
     {
       "result": "unsanitized"
@@ -32,8 +39,7 @@ Build a Flask API that receives a JSON payload via a POST request, checks for SQ
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/yabesh12/Flask-API-SQL-INJECTION
    ```
 
 2. Set up a virtual environment (optional but recommended):
