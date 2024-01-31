@@ -1,0 +1,30 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local development environment
+venv/
+
+# Ignore environment configuration files
+.env
+
+# Ignore generated files
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyo
+*.pyc
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore project-specific directories
+*.egg-info/
+dist/
+build/
+*.egg
