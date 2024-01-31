@@ -1,4 +1,3 @@
-```markdown
 # Flask API for SQL Injection Check
 
 ## Objective
@@ -53,7 +52,10 @@ Build a Flask API that receives a JSON payload via a POST request, checks for SQ
    python app/app.py
    ```
 
-5. Access the API at `http://127.0.0.1:5000/v1/sanitized/input/` with appropriate POST requests.
+5. Access the API at: (POST)
+    ```bash
+    http://127.0.0.1:5000/v1/sanitized/input/
+    ``` 
 
 ## Testing
 
