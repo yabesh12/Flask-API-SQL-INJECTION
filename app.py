@@ -15,7 +15,9 @@ def is_sanitized(input_string):
     """
     # Check for SQL injection characters
     sql_injection_pattern = re.compile(r'(\bSELECT\b|\bINSERT\b|\bUPDATE\b|\bDELETE\b|\bDROP\b|\bCREATE\b|\bALTER\b)', re.IGNORECASE)
-    if sql_injection_pattern.search(input_string):
+    
+    # Check for any non-alphanumeric characters
+    if sql_injection_pattern.search(input_string) or re.search(r'[^a-zA-Z0-9]', input_string):
         return False
     return True
 
